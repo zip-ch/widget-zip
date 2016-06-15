@@ -63,7 +63,7 @@ zipWidget({
 
 ```
 
-* You can change the text of the label and of the placeholder of the widget :
+* You can change the text of the label (the label doesn't appear if in paysage format) and of the placeholder of the widget :
 
 ```
 zipWidget({
@@ -72,4 +72,4 @@ zipWidget({
 	}); 
 
 ```
-if you don't want any text label you can leave that option empty
+If you don't want any text label you can leave that option empty
