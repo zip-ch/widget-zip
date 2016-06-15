@@ -12,7 +12,6 @@ Copy that code where you want the widget to appear
 
 ```
 <div id="zipWidget"></div>
-
 ```
 
 And copy that script right before the </body> of your website 
