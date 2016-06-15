@@ -14,7 +14,7 @@ Copy that code where you want the widget to appear
 <div id="zipWidget"></div>
 ```
 
-And copy that script right before the </body> of your website 
+And copy that script right before the html enclosure tag of your website 
 ```
 <script src="zipWidget.js" type="text/javascript"></script>
 <script type="text/javascript">	
