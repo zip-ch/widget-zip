@@ -8,15 +8,19 @@ Widget for the directory [zip.ch](https://zip.ch) to integrate in external websi
 
 * Or you can directly download the file js file zipWidget.min.js:
 
-Copy the code bellow on your website to display the widget 
+Copy that code where you want the widget to appear 
 
 ```
 <div id="zipWidget"></div>
+
+```
+
+And copy that script right before the </body> of your website 
+```
 <script src="zipWidget.js" type="text/javascript"></script>
 <script type="text/javascript">	
 	zipWidget();
 </script>
-
 ```
 
 ## Options
