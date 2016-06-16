@@ -4,6 +4,7 @@ function zipWidget(arg) {
 
 	var color = (arg.color === undefined) ? "positif" : arg.color;
 	var format = (arg.format === undefined) ? "portrait" : arg.format;
+	var small = (arg.small === undefined) ? "false" : arg.small;
 
 	var width = (arg.width === undefined) ? "100%" : arg.width;
 	var radius = (arg.radius === undefined) ? "5px" : arg.radius;
@@ -29,16 +30,20 @@ function zipWidget(arg) {
 		backgroundWidget = "#f9f9f9";
 		logoImg = "https://s3-eu-central-1.amazonaws.com/zip.ch/static/images/widget/logo-full-neg.svg";
 		textColor = "#514b4b";
-		border = '#D8232A 1px solid';
+		border = '#c3bebe 1px solid';
 	}
 
 
 	// CSS Variable 
 	var css = '<style type="text/css">';
-	css    += '.zipWidgetLinks{font-family: "roboto", sans-serif; list-style: none; margin: 10px 0 0; padding: 0; text-align: center; } .zipWidgetLogo img{height: auto; max-width: 150px; } .zipWidgetLinks li{display: inline-block; margin-right: 20px; } .zipWidgetLinks li:last-child{margin-right: 0px; } .zipWidgetLinks li a{text-decoration: none; color: '+textColor+'; } #zipWidget{background: '+backgroundWidget+'; border-radius: '+radius+'; width: '+width+'; } .zipWidgetWrapper{padding: 15px; text-align: center; } .zipWidgetLogo{display: block; } .zipWidgetForm{margin-bottom: 0; } .zipWidgetLabel{color: '+textColor+'; font-family: "Roboto", sans-serif; display:  block; font-size: 14px; margin: 30px 0 5px; font-weight: 300; } .zipWidgetInput{width:  100%; display:  block; position: relative; } .zipWidgetText{background: #fff; height: 36px; border-radius: 18px; font-size: 14px; border: none; padding: 0px 20px; width:  100%; border: '+border+'; } .zipWidgetText:focus{outline: none; } .zipWidgetSubmit{position: absolute; right: 3px; top: 3px; height: 30px; width: 30px; border-radius: 100%; background: #514b4b; color: #fff; box-shadow: 0 0 1px rgba(0,0,0,0.3); border:none; outline: none; display: block; } .zipWidgetSubmit:hover{background:#c3bebe; cursor: pointer; }';
+	css    += '.zipWidgetLinks{font-family: "roboto", sans-serif; list-style: none; margin: 10px 0 0; padding: 0; text-align: center; } .zipWidgetLogo img{height: auto; max-width: 90px; } .zipWidgetLinks li{display: inline-block; margin-right: 20px; } .zipWidgetLinks li:last-child{margin-right: 0px; } .zipWidgetLinks li a{text-decoration: none; color: '+textColor+'; } #zipWidget{background: '+backgroundWidget+'; border-radius: '+radius+'; width: '+width+'; } .zipWidgetWrapper{padding: 15px; text-align: center; } .zipWidgetLogo{display: block; } .zipWidgetForm{margin-bottom: 0; } .zipWidgetLabel{color: '+textColor+'; font-family: "Roboto", sans-serif; display:  block; font-size: 14px; margin: 30px 0 5px; font-weight: 300; } .zipWidgetInput{width:  100%; display:  block; position: relative; } .zipWidgetText{background: #fff; height: 36px; border-radius: 18px; font-size: 14px; border: none; padding: 0px 20px; width:  100%; border: '+border+'; } .zipWidgetText:focus{outline: none; } .zipWidgetSubmit{position: absolute; right: 3px; top: 3px; height: 30px; width: 30px; border-radius: 100%; background: #514b4b; color: #fff; box-shadow: 0 0 1px rgba(0,0,0,0.3); border:none; outline: none; display: block; } .zipWidgetSubmit:hover{background:#c3bebe; cursor: pointer; }';
 	
 	if(format == "paysage"){
-		css += '.zipWidgetLogo{float: left; margin-right: 20px; width: 70px; margin-top: -3px; } .zipWidgetLogo img{height: auto; width: 70px; } .zipWidgetForm{max-width: 500px; margin: auto; } .zipWidgetInput{float: left; width: calc(100% - 90px); } .zipWidgetWrapper{overflow: hidden; padding: 10px; } .zipWidgetLabel{margin-top: 0; display: none; }'
+		css += '.zipWidgetLogo{float: left; margin-right: 10px; width: 70px; margin-top: -3px; } .zipWidgetLogo img{height: auto; width: 70px; } .zipWidgetForm{max-width: 500px; margin: auto; } .zipWidgetInput{float: left; width: calc(100% - 80px); } .zipWidgetWrapper{overflow: hidden; padding: 10px; } .zipWidgetLabel{margin-top: 0; display: none; }'
+		
+		if(small == "true"){
+			css += '.zipWidgetLogo img{width: 50px; } .zipWidgetLogo{width: 50px; margin-right: 5px; margin-top: 0px; } .zipWidgetInput {width: calc(100% - 55px); } .zipWidgetText{height: 30px; } .zipWidgetSubmit{width: 26px; height: 26px; right: 2px; top: 2px; }'
+		}
 	}
 	
 	css    += '</style>'

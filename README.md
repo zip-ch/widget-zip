@@ -53,6 +53,24 @@ zipWidget({
 
 ```
 
+* You can choose to have a smaller version of the widget (only for paysage mode) :
+
+```
+zipWidget({
+		small: "true"  //by default false
+	});
+
+```
+
+* You can remvove the links below the field :
+
+```
+zipWidget({
+		links: "false"  //by default true
+	});
+
+```
+
 * You can choose the width and the border-radius of the widget :
 
 ```
