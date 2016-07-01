@@ -1,11 +1,17 @@
-<div id="zipWidget"></div>
+<div id="zipWidget">
+  <div id="zipCode"></div>
+  <a class="zipWidgetLink" href="https://zip.ch/" target="_blank"> ZIP.ch </a>
+</div>
+<script type="text/javascript" src="https://s3-eu-central-1.amazonaws.com/zip.ch/static/javascripts/production-31bdaeed71.js"></script>
 <script src="js/zipWidget.js" type="text/javascript"></script>
 <script type="text/javascript">	
 	zipWidget({
 		lang: "fr",
-		textLabel: "Je suis un texte",
-		width: "300px",
+		width: "990px",
 		format: "paysage",
-		small: "true"
+		small: "true",
+		color: "transparent",
+		logo: "false"
+
 	});
 </script>
