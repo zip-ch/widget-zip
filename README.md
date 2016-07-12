@@ -4,7 +4,7 @@ Widget for the directory [ZIP.ch](https://zip.ch) to integrate in external websi
 
 ## Call script
 
-* You can call the script at :
+* You can call the script at : https://s3.eu-central-1.amazonaws.com/zip.ch/static/zipWidget.js
 
 * Or you can directly download the file js file zipWidget.min.js:
 
@@ -45,7 +45,7 @@ zipWidget({
 zipWidget({
 		color: "negatif" //by default positif
 	});
-	
+
 zipWidget({
 		color: "transparent" //by default positif
 	});
