@@ -1,5 +1,5 @@
-# widget-zip.ch
-Widget for the directory [zip.ch](https://zip.ch) to integrate in external websites
+# widget-ZIP.ch
+Widget for the directory [ZIP.ch](https://zip.ch) to integrate in external websites
 
 
 ## Call script
@@ -11,12 +11,16 @@ Widget for the directory [zip.ch](https://zip.ch) to integrate in external websi
 Copy that code where you want the widget to appear 
 
 ```
-<div id="zipWidget"></div>
+<div id="zipWidget">
+  <div id="zipCode"></div>
+  <a class="zipWidgetLink" href="https://zip.ch/" target="_blank"> ZIP.ch </a>
+</div>
 ```
 
-And copy that script right before the html enclosure tag of your website 
+And copy that script right before the body enclosure tag of your website 
 ```
-<script src="zipWidget.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://s3-eu-central-1.amazonaws.com/zip.ch/static/javascripts/production.js"></script>
+<script src="https://s3.eu-central-1.amazonaws.com/zip.ch/static/zipWidget.js" type="text/javascript"></script>
 <script type="text/javascript">	
 	zipWidget();
 </script>
@@ -40,6 +44,9 @@ zipWidget({
 ```
 zipWidget({
 		color: "negatif" //by default positif
+	});
+zipWidget({
+		color: "transparent" //by default positif
 	});
 
 ```
@@ -67,6 +74,15 @@ zipWidget({
 ```
 zipWidget({
 		links: "false"  //by default true
+	});
+
+```
+
+* You can remvove the logo ZIP.ch :
+
+```
+zipWidget({
+		logo: "false"  //by default true
 	});
 
 ```

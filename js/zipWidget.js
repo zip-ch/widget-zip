@@ -16,7 +16,7 @@ function zipWidget(arg) {
 	placeHolder = (typeof placeHolder === "object") ? placeHolder[lang]:placeHolder;
 
 	var links = (arg.links === undefined) ? "true" : arg.links;
-	var logo = (arg.links === undefined) ? "true" : arg.links;
+	var logo = (arg.logo === undefined) ? "true" : arg.logo;
 	var routen = {"en": "Itinerary", "de": "Routenplaner", "fr": "Itineraire", "it":"Itinerario"}
 	
 	var backgroundWidget = "#D8232A";
