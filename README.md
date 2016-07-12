@@ -39,12 +39,13 @@ zipWidget({
 
 ```
 
-* You can choose to have a negative version of the widget :
+* You can choose to have a negative or a transparent version of the widget :
 
 ```
 zipWidget({
 		color: "negatif" //by default positif
 	});
+	
 zipWidget({
 		color: "transparent" //by default positif
 	});
