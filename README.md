@@ -11,18 +11,18 @@ Widget for the directory [ZIP.ch](https://zip.ch) to integrate in external websi
 Copy that code where you want the widget to appear
 
 ```
-<div id="zipWidget">
-  <div id="zipCode"></div>
-  <a class="zipWidgetLink" href="https://zip.ch/" target="_blank"> ZIP.ch </a>
+<div id='zipWidget'>
+  <div id='zipCode'></div>
+  <a class='zipWidgetLink' href='https://zip.ch/' target='_blank'> ZIP.ch </a>
 </div>
 ```
 
 And copy that script right before the body enclosure tag of your website
 
 ```
-<script type="text/javascript" src="https://assets.zip.ch/static/javascripts/production.js"></script>
-<script src="https://s3.eu-central-1.amazonaws.com/zip.ch/static/zipWidget.js" type="text/javascript"></script>
-<script type="text/javascript">
+<script type='text/javascript' src='https://assets.zip.ch/static/javascripts/production.js'></script>
+<script src='https://s3.eu-central-1.amazonaws.com/zip.ch/static/zipWidget.js' type='text/javascript'></script>
+<script type='text/javascript'>
 	zipWidget();
 </script>
 ```
@@ -35,7 +35,7 @@ Multiple options are avaible for the widget
 
 ```
 zipWidget({
-		lang: "fr" //by default de
+		lang: 'fr' // by default de
 	});
 ```
 
@@ -43,11 +43,11 @@ zipWidget({
 
 ```
 zipWidget({
-		color: "negatif" //by default positif
+		color: 'negatif' // by default positif
 	});
 
 zipWidget({
-		color: "transparent" //by default positif
+		color: 'transparent' // by default positif
 	});
 ```
 
@@ -55,7 +55,7 @@ zipWidget({
 
 ```
 zipWidget({
-		format: "paysage"  //by default portrait
+		format: 'paysage'  // by default portrait
 	});
 ```
 
@@ -63,7 +63,7 @@ zipWidget({
 
 ```
 zipWidget({
-		small: "true"  //by default false
+		small: true  // by default false
 	});
 ```
 
@@ -71,7 +71,7 @@ zipWidget({
 
 ```
 zipWidget({
-		links: "false"  //by default true
+		links: false  // by default true
 	});
 ```
 
@@ -79,7 +79,7 @@ zipWidget({
 
 ```
 zipWidget({
-		logo: "false"  //by default true
+		logo: false  // by default true
 	});
 ```
 
@@ -87,8 +87,8 @@ zipWidget({
 
 ```
 zipWidget({
-		width: "100px", //by default 100%
-		radius: "5px" //by default 5px
+		width: '100px', // by default 100%
+		radius: '5px' // by default 5px
 	});
 ```
 
@@ -96,8 +96,8 @@ zipWidget({
 
 ```
 zipWidget({
-		textLabel: "Text label test", //by default {"en": "Search for", "de": "Suche nach", "fr": "Recherche pour", "it":"Che? Che? Che?"}
-		placeHolder: "Placeholder" //by default {"en": "Who? What? Where?", "de": "Wer? Who? Was?", "fr": "Qui? Quoi? Où?", "it":"Che? Che? Che?"}
+		textLabel: 'Text label test', // by default {'en': 'Search for', 'de': 'Suche nach', 'fr': 'Recherche pour', 'it':'Che? Che? Che?'}
+		placeHolder: 'Placeholder' // by default {'en': 'Who? What? Where?', 'de': 'Wer? Who? Was?', 'fr': 'Qui? Quoi? Où?', 'it':'Che? Che? Che?'}
 	});
 ```
 
