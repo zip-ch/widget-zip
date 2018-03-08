@@ -45,22 +45,19 @@ function zipWidget(arg) {
   let backgroundWidget = '#D8232A'
   let textColor = '#fff'
   let border = 'none'
-  let logoImg =
-    'https://s3-eu-central-1.amazonaws.com/zip.ch/static/images/logo-full.svg'
+  let logoImg = 'https://assets.zip.ch/static/images/logo-full.svg'
   // END Variables
 
   if (color === 'negatif') {
     backgroundWidget = '#f9f9f9'
-    logoImg =
-      'https://s3-eu-central-1.amazonaws.com/zip.ch/static/images/widget/logo-full-neg.svg'
+    logoImg = 'https://assets.zip.ch/static/images/widget/logo-full-neg.svg'
     textColor = '#514b4b'
     border = '#c3bebe 1px solid'
   }
 
   if (color === 'transparent') {
     backgroundWidget = 'transparent'
-    logoImg =
-      'https://s3-eu-central-1.amazonaws.com/zip.ch/static/images/widget/logo-full-neg.svg'
+    logoImg = 'https://assets.zip.ch/static/images/widget/logo-full-neg.svg'
     textColor = '#514b4b'
     border = '#c3bebe 1px solid'
   }
@@ -101,12 +98,10 @@ function zipWidget(arg) {
   // END CSS Variable
 
   if (format === 'paysage') {
-    logoImg =
-      'https://s3-eu-central-1.amazonaws.com/zip.ch/static/images/widget/logo-small.svg'
+    logoImg = 'https://assets.zip.ch/static/images/widget/logo-small.svg'
 
     if (color === 'negatif') {
-      logoImg =
-        'https://s3-eu-central-1.amazonaws.com/zip.ch/static/images/widget/logo-small-neg.svg'
+      logoImg = 'https://assets.zip.ch/static/images/widget/logo-small-neg.svg'
     }
   }
 
@@ -123,7 +118,7 @@ function zipWidget(arg) {
     lang +
     '" placeholder="' +
     placeHolder +
-    '"> <button class="zipWidgetSubmit" name="zip" value="Suchen" type="submit"> <img src="https://s3-eu-central-1.amazonaws.com/zip.ch/static/images/widget/magni.svg" alt=""> </button> </div> </form>'
+    '"> <button class="zipWidgetSubmit" name="zip" value="Suchen" type="submit"> <img src="https://assets.zip.ch/static/images/widget/magni.svg" alt=""> </button> </div> </form>'
   if (links === true) {
     html +=
       '<ul class="zipWidgetLinks"><li><a href="https://zip.ch/' +
