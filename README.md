@@ -1,6 +1,6 @@
 # widget-ZIP.ch
-Widget for the directory [ZIP.ch](https://zip.ch) to integrate in external websites
 
+Widget for the directory [ZIP.ch](https://zip.ch) to integrate in external websites
 
 ## Call script
 
@@ -8,7 +8,7 @@ Widget for the directory [ZIP.ch](https://zip.ch) to integrate in external websi
 
 * Or you can directly download the file js file zipWidget.min.js:
 
-Copy that code where you want the widget to appear 
+Copy that code where you want the widget to appear
 
 ```
 <div id="zipWidget">
@@ -17,11 +17,12 @@ Copy that code where you want the widget to appear
 </div>
 ```
 
-And copy that script right before the body enclosure tag of your website 
+And copy that script right before the body enclosure tag of your website
+
 ```
-<script type="text/javascript" src="https://s3-eu-central-1.amazonaws.com/zip.ch/static/javascripts/production.js"></script>
+<script type="text/javascript" src="https://assets.zip.ch/static/javascripts/production.js"></script>
 <script src="https://s3.eu-central-1.amazonaws.com/zip.ch/static/zipWidget.js" type="text/javascript"></script>
-<script type="text/javascript">	
+<script type="text/javascript">
 	zipWidget();
 </script>
 ```
@@ -36,7 +37,6 @@ Multiple options are avaible for the widget
 zipWidget({
 		lang: "fr" //by default de
 	});
-
 ```
 
 * You can choose to have a negative or a transparent version of the widget :
@@ -49,7 +49,6 @@ zipWidget({
 zipWidget({
 		color: "transparent" //by default positif
 	});
-
 ```
 
 * You can choose to have a paysage version of the widget :
@@ -58,7 +57,6 @@ zipWidget({
 zipWidget({
 		format: "paysage"  //by default portrait
 	});
-
 ```
 
 * You can choose to have a smaller version of the widget (only for paysage mode) :
@@ -67,7 +65,6 @@ zipWidget({
 zipWidget({
 		small: "true"  //by default false
 	});
-
 ```
 
 * You can remvove the links below the field :
@@ -76,7 +73,6 @@ zipWidget({
 zipWidget({
 		links: "false"  //by default true
 	});
-
 ```
 
 * You can remvove the logo ZIP.ch :
@@ -85,7 +81,6 @@ zipWidget({
 zipWidget({
 		logo: "false"  //by default true
 	});
-
 ```
 
 * You can choose the width and the border-radius of the widget :
@@ -94,8 +89,7 @@ zipWidget({
 zipWidget({
 		width: "100px", //by default 100%
 		radius: "5px" //by default 5px
-	}); 
-
+	});
 ```
 
 * You can change the text of the label (the label doesn't appear if in paysage format) and of the placeholder of the widget :
@@ -104,7 +98,7 @@ zipWidget({
 zipWidget({
 		textLabel: "Text label test", //by default {"en": "Search for", "de": "Suche nach", "fr": "Recherche pour", "it":"Che? Che? Che?"}
 		placeHolder: "Placeholder" //by default {"en": "Who? What? Where?", "de": "Wer? Who? Was?", "fr": "Qui? Quoi? Où?", "it":"Che? Che? Che?"}
-	}); 
-
+	});
 ```
+
 If you don't want any text label you can leave that option empty
